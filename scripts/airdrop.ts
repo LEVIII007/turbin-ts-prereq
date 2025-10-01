@@ -23,7 +23,7 @@ const LAMPORTS_PER_SOL = BigInt(1_000_000_000);
     const sig = await airdrop({
       commitment: "confirmed",
       recipientAddress: keypair.address,
-      lamports: lamports(2n * LAMPORTS_PER_SOL),
+      lamports: lamports(1n * LAMPORTS_PER_SOL),
     });
     console.log(
       `Success! Check out your TX here: https://explorer.solana.com/tx/${sig}?cluster=devnet`
